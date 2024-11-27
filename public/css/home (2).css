@@ -68,10 +68,6 @@
   flex-direction: row;
 }
 
-.pagination_dot img {
-  cursor: pointer;
-}
-
 .container .pagination_dot .dot {
   width: 20px;
   height: 20px;
@@ -118,7 +114,8 @@
   background-image: url("../images/other/header\ bg.svg");
   border-radius: 5px;
 }
-*/ .header_frame .header_left .header_content {
+
+.header_frame .header_left .header_content {
   margin-top: 90px;
   display: flex;
   flex-direction: column;
@@ -426,7 +423,7 @@
 
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .selling_product_frame .product_box .product_img_box {
@@ -438,6 +435,7 @@
   display: none;
   width: 100%;
   height: 100%;
+
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -455,17 +453,17 @@
   border: none;
 
   border-radius: 6px;
-
+  background: #0053f6;
   box-shadow: 0px 5px 20px 0px rgba(0, 83, 246, 0.1);
-  background: rgb(0, 83, 246);
 
-  color: rgb(4, 30, 66);
-  font-family: Jost;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0%;
+  color: var(--Bg-White, #fff);
   text-align: center;
+
+  font-family: "Jost";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
 }
 
 .selling_product_frame .product_img_box:hover .hover_box {
@@ -480,30 +478,30 @@
 }
 
 .selling_product_frame .product_content_box .product_title {
-  color: rgb(98, 105, 116);
+  color: var(--Color-Text-Light, #626974);
   font-family: Jost;
   font-size: 13px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0%;
-  text-align: left;
+  line-height: 22px; /* 169.231% */
   text-transform: uppercase;
 }
 
 .selling_product_frame .product_content_box .product_desc {
+  overflow: hidden;
+  height: 56px;
   margin-top: 7px;
-  color: rgb(4, 30, 66);
   font-family: Jost;
   font-size: 16px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
+
+  color: #041e42;
 }
 
 .selling_product_frame .product_content_box .review_box {
   margin-top: 7px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -514,82 +512,57 @@
 }
 
 .selling_product_frame .review_box span {
-  color: rgb(98, 105, 116);
+  margin-left: 10px;
+
   font-family: Jost;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
+  color: #626974;
 }
 
 .selling_product_frame .product_content_box .price_box {
   margin-top: 10px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .selling_product_frame .price_box strong {
-  color: rgb(4, 30, 66);
   font-family: Jost;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #041e42;
 }
 
 .selling_product_frame .price_box span {
   margin-left: 10px;
-  color: rgb(98, 105, 116);
+  color: #626974;
   font-family: Jost;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
-
   text-decoration-line: line-through;
 }
 
-.container .pagination_box {
-  margin-top: 30px;
+.home_page .adv_frame {
+  margin-top: 90px;
   width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.container .pagination_box .pagination_main {
-  width: auto;
-  height: 24px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.container .pagination_main .pagination_dot {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.container .pagination_dot .dot {
-  width: 20px;
-  height: 20px;
+  height: 120px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.container .pagination_dot .dot div {
-  width: 4px;
-  height: 4px;
-  background: rgb(17, 33, 55);
-  border-radius: 50%;
-}
+  background-color: #e5edff;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.01px;
 
-.container .pagination_dot .dot .active {
-  border: 2px solid rgb(17, 33, 55);
+  color: #0053f6;
 }
