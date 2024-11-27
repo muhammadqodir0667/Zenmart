@@ -118,7 +118,7 @@
   background-image: url("../images/other/header\ bg.svg");
   border-radius: 5px;
 }
-*/ .header_frame .header_left .header_content {
+.header_frame .header_left .header_content {
   margin-top: 90px;
   display: flex;
   flex-direction: column;
