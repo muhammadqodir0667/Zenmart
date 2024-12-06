@@ -506,3 +506,22 @@ p {
 
   letter-spacing: 0%;
 }
+
+/*PAGE_BOTTOM */
+.page_bottom {
+  margin: 20px 0px;
+  width: 1320px;
+}
+
+.page_bottom span {
+  color: rgb(4, 30, 66);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.page_bottom span.drop {
+  margin: 0px 10px;
+}
